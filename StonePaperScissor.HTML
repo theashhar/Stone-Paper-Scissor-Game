@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StonePaperScissorStyle.css">
+    <title>Stone Paper Scissor Game</title>
+</head>
+<body>
+    <div class="centerbox">
+        <div class="insidecontainer">
+            <button class="blocks" onclick="playGame()" value="stone" ><h1 value="stone" id="stone" >✊</h1></button>
+            <button class="blocks" onclick="playGame()" value="paper" ><h1 value="paper" id="paper" >✋</h1></button>
+            <button class="blocks" onclick="playGame()" value="scissor" ><h1 value="scissor" id="scissor" >✌️</h1></button>
+        </div>
+        <div class="CompOutput" ><h1 id="CompOutput">✊</h1><img src="computerIcon.svg" id="compIcon"></div>
+        <div class="resultText" ><h1 id="resultText">Play!</h1></div>
+        <div class="resultText2" >
+            Total Matches:<span id="counter"> 0</span>
+            Your Total Score:<span id="score"> 0</span>
+        </div>
+        <button class="stopBtn" id="stopGame" onclick="stopGame()"><img src="replay.svg" id="reset"></button>
+    </div>
+    <script src="/CWH_course/StonePaperScissorScript.js"></script>
+</body>
+</html> 
